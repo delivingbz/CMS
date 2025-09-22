@@ -1,0 +1,16 @@
+@keyframes bgColorChange {
+	0% {
+		background-color: #142638;
+	}
+	50% {
+		background-color: #1e3a5c;
+	}
+	100% {
+		background-color: #142638;
+	}
+}
+
+.animate-bg {
+	animation: bgColorChange 6s ease-in-out infinite;
+}
+@import "tailwindcss";
