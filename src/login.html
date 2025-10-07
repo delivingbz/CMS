@@ -24,7 +24,7 @@
           Login to Your Account
         </h1>
         <div class="w-2/3 max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
-          <form action="">
+          <form id="loginForm">
             <div class="mb-6 mt-3">
               <label
                 for="email"
@@ -33,7 +33,7 @@
               >
               <input
                 type="email"
-                id="email"
+                id="login-email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Enter your email"
               />
@@ -46,7 +46,7 @@
               >
               <input
                 type="password"
-                id="password"
+                id="login-password"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Enter your password"
               />
@@ -63,9 +63,12 @@
                 >Register here</a
               >
             </p>
+            <!-- Place this inside your login form -->
+            <div id="error-message" class="text-center text-red-500 mb-2"></div>
           </form>
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
